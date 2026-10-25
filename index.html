@@ -16,7 +16,12 @@
 <p>lifehub is not a public service. No one other than the owner can sign up for it or use it.</p>
 
 <h2>Google integration</h2>
-<p>lifehub uses Google OAuth to request <strong>read-only</strong> access to the owner's own Google Drive (<code>https://www.googleapis.com/auth/drive.readonly</code>). It reads file metadata and content to index and categorize the owner's documents. It never creates, modifies, shares or deletes anything in Google Drive.</p>
+<p>lifehub uses Google OAuth to access the owner's own Google account:</p>
+<ul>
+<li><strong>Google Drive, read-only</strong> (<code>https://www.googleapis.com/auth/drive.readonly</code>): reads file metadata and content to index and categorize the owner's documents. It never creates, modifies, shares or deletes anything in Google Drive.</li>
+<li><strong>Gmail, read-only</strong> (<code>https://www.googleapis.com/auth/gmail.readonly</code>): reads the owner's messages to search them and answer the owner's questions.</li>
+<li><strong>Gmail drafts and sending</strong> (<code>https://www.googleapis.com/auth/gmail.compose</code>): creates draft emails, and sends a draft only after the owner explicitly approves that specific draft. It does not delete messages or change labels.</li>
+</ul>
 
 <p>Details: <a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Service</a></p>
 

@@ -9,15 +9,20 @@
 <body>
 <nav><a href="./">Home</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a></nav>
 <h1>Privacy Policy</h1>
-<p class="meta">Effective date: October 23, 2026</p>
+<p class="meta">Effective date: October 25, 2026</p>
 
 <p>lifehub is a personal application that Yu Xing (the "owner") operates for their own use. The only person whose Google account lifehub accesses is the owner.</p>
 
 <h2>Data lifehub accesses</h2>
-<p>With the owner's explicit consent through Google OAuth, lifehub requests the read-only scope <code>https://www.googleapis.com/auth/drive.readonly</code>. With it, lifehub can read the owner's Google Drive file metadata (such as names, folders, types and timestamps) and file contents.</p>
+<p>With the owner's explicit consent through Google OAuth, lifehub requests these scopes:</p>
+<ul>
+<li><code>https://www.googleapis.com/auth/drive.readonly</code>: read the owner's Google Drive file metadata (such as names, folders, types and timestamps) and file contents.</li>
+<li><code>https://www.googleapis.com/auth/gmail.readonly</code>: read the owner's Gmail messages, including headers, bodies and attachment names.</li>
+<li><code>https://www.googleapis.com/auth/gmail.compose</code>: create draft emails in the owner's Gmail account and send drafts. lifehub sends a draft only after the owner has reviewed and explicitly approved that specific draft. It does not request scopes that delete messages or change labels.</li>
+</ul>
 
 <h2>How lifehub uses the data</h2>
-<p>lifehub uses this data only to index, categorize and search the owner's own documents, and to answer the owner's own questions about them. lifehub does not use the data for advertising, does not build profiles of anyone other than the owner, and does not sell the data.</p>
+<p>lifehub uses this data only to index, categorize and search the owner's own documents and email, to answer the owner's own questions about them, and to prepare emails that the owner chooses to send. lifehub does not use the data for advertising, does not build profiles of anyone other than the owner, and does not sell the data.</p>
 
 <h2>Storage</h2>
 <p>lifehub stores the OAuth tokens and any data it reads on the owner's own computer. It does not run a server and does not upload Google user data to any server that the owner does not control.</p>
